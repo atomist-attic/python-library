@@ -49,7 +49,7 @@ end
 
 with file f when f.name.endsWith ".py" begin
    do replace "python_lib" project_name
-   do replace "0.0.1" version
+   do replace "0.1.0" version
    do replace "My library" description
 end
 
