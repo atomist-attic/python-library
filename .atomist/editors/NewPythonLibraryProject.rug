@@ -27,7 +27,7 @@ uses SetProjectReadme
 @maxLength 21
 @description "names your library following PEP8 conventions"
 @displayName "Library name"
-param project_name: "^[A-Za-z][-A-Za-z0-9_]+$"
+param project_name: ^[A-Za-z][-A-Za-z0-9_]+$
 
 @default "0.1.0"
 @displayName "Semantic Version"

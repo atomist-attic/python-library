@@ -19,7 +19,7 @@ editor AddChangeLog
 
 @description "names the new project"
 @displayName "Name"
-param project_name: "^[A-Za-z][-A-Za-z0-9_]+$"
+param project_name: ^[A-Za-z][-A-Za-z0-9_]+$
 
 @default "0.1.0"
 @displayName "Semantic Version"
