@@ -41,7 +41,7 @@ param version: @semantic_version
 @description "describes your library in a few words"
 @displayName "description"
 @validInput "Free Text"
-param description: .*
+param description: ^.*$
 
 with project begin
    do replaceInPath "python_lib" project_name
