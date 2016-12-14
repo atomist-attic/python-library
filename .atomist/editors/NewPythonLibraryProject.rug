@@ -23,6 +23,7 @@
 editor NewPythonLibraryProject
 
 uses SetProjectReadme
+uses UpdateDocs
 
 @maxLength 21
 @description "names your library following PEP8 conventions"
@@ -62,3 +63,4 @@ with project begin
 end
 
 SetProjectReadme
+UpdateDocs
