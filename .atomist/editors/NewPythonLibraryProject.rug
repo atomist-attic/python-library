@@ -25,24 +25,26 @@ editor NewPythonLibraryProject
 uses SetProjectReadme
 uses UpdateDocs
 
-@maxLength 21
-@description "names your library following PEP8 conventions"
 @displayName "Library name"
+@description "names your library"
+@validInput "a name that follows PEP8 conventions"
+@minLength 1
+@maxLength 21
 param project_name: ^[A-Za-z][-A-Za-z0-9_]+$
 
-@default "0.1.0"
 @displayName "Semantic Version"
+@description "sets a Semantic Version number of the form, e.g. 0.1.0"
+@validInput "a valid semantic version, http://semver.org"
 @optional
-@description "sets a Semantic Version number of the form: MAJOR.MINOR.PATCH following guidelines at http://semver.org/"
-@validInput "MAJOR.MINOR.PATCH"
+@default "0.1.0"
 param version: @semantic_version
 
-@default "My new project"
-@optional
+@displayName "Description"
 @description "describes your library in a few words"
-@displayName "description"
-@validInput "Free Text"
-param description: ^.*$
+@validInput "some free text"
+@optional
+@default "My new project"
+param description: @any
 
 with project begin
    do replaceInPath "python_lib" project_name

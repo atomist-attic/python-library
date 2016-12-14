@@ -17,11 +17,11 @@
 @description "adds the CHANGELOG of a Python library project"
 editor AddChangeLog
 
-@default "0.1.0"
 @displayName "Semantic Version"
+@description "sets a Semantic Version number of the form, e.g. 0.1.0"
+@validInput "a valid semantic version, http://semver.org"
 @optional
-@description "sets a Semantic Version number of the form: MAJOR.MINOR.PATCH following guidelines at http://semver.org/"
-@validInput "MAJOR.MINOR.PATCH"
+@default "0.1.0"
 param version: @semantic_version
 
 let template = "CHANGELOG.mustache"
