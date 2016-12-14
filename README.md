@@ -77,8 +77,6 @@ Name | Required | Default | Description
 
 [semver]: http://semver.org
 
-If you don't provide a specific version, it will default to `'0.1.0'`.
-
 #### Running
 
 Run it as follows:
