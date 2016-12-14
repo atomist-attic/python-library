@@ -63,6 +63,11 @@ See the README in the generated project for further instructions.
 
 ### AddChangeLog
 
+The `AddChangeLog` editor adds a somewhat basic `CHANGELOG.md` file following
+[common conventions][changelog].
+
+[changelog]: http://keepachangelog.com/en/0.3.0/
+
 #### Prerequisites
 
 There are no prerequisites to running this editor.
@@ -89,6 +94,9 @@ $ rug edit atomist-rugs:python-library:AddChangeLog \
 
 ### AddPythonGitignore
 
+The `AddPythonGitignore` editor adds a default `.gitignore` file suitable
+for Python projects.
+
 #### Prerequisites
 
 There are no prerequisites to running this editor.
@@ -107,6 +115,10 @@ $ rug edit atomist-rugs:python-library:AddPythonGitignore
 ```
 
 ### AddTravisCI
+
+The `AddTravisCI` editor adds a `.travis.yml` file to your project with a basic
+layout for building a Python project. It installs the dependencies and runs your
+tests as part of the build.
 
 #### Prerequisites
 
