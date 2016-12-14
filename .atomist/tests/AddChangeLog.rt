@@ -13,19 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@tag "python-lib"
-@description "adds the CHANGELOG of a Python library project"
-editor AddChangeLog
+scenario Travis should be added to an existing project
 
-@default "0.1.0"
-@displayName "Semantic Version"
-@optional
-@description "sets a Semantic Version number of the form: MAJOR.MINOR.PATCH following guidelines at http://semver.org/"
-@validInput "MAJOR.MINOR.PATCH"
-param version: @semantic_version
+let project_name = "my_super_lib"
+let changelog = "CHANGELOG.md"
+let version = "0.9.0"
 
-let template = "CHANGELOG.mustache"
-let creation_date = { new Date().toISOString().split('T')[0] }
+given
+  ArchiveRoot
 
-with project p
-	do merge template to "CHANGELOG.md"
+when
+AddChangeLog
+
+then
+  fileExists changelog
+  and fileContains changelog version
