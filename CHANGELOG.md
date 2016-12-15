@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.1.2] - 2016-12-15
 
-#### Changed
+### Changed
 
 - This changelog
 - Editor short descriptions in README
