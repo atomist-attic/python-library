@@ -145,7 +145,7 @@ at [atomist-community.slack.com][slack].
 
 If you find a problem, please create an [issue][].
 
-[issue]: https://github.com/atomist-rugs/spring-boot-rest-service/issues
+[issue]: https://github.com/atomist-rugs/python-library/issues
 
 ## Development
 

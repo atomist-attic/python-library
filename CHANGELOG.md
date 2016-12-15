@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 
 - Travis build badge to lead to the right place
+- Fix support link
 
 [Unreleased]: https://github.com/atomist-rugs/python-library/compare/0.1.2...HEAD
 
