@@ -5,14 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.1.2] - 2016-12-15
 
 #### Changed
 
 - This changelog
 - Editor short descriptions in README
+- Updated Rug minimal dependency to 0.6.0
 
-[Unreleased]: https://github.com/atomist-rugs/python-library/compare/0.1.1...HEAD
+[0.1.2]: https://github.com/atomist-rugs/python-library/compare/0.1.1...0.1.2
 
 ## [0.1.1] - 2016-12-14
 
