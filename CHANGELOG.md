@@ -5,14 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.1.3] - 2017-01-05
 
 ### Changed
 
 - Travis build badge to lead to the right place
 - Fix support link
+- Using CamelCase for types as per rug 0.8.0
+- Rug runtime dependency updated to 0.8.0
 
-[Unreleased]: https://github.com/atomist-rugs/python-library/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/atomist-rugs/python-library/compare/0.1.2...0.1.3
 
 ## [0.1.2] - 2016-12-15
 

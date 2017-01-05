@@ -30,5 +30,5 @@ param description: ^.*$
 
 let template = "readme.mustache"
 
-with project
+with Project
 	do merge template to "README.md"

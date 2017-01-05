@@ -27,5 +27,5 @@ param version: @semantic_version
 let template = "CHANGELOG.mustache"
 let creation_date = { new Date().toISOString().split('T')[0] }
 
-with project p
+with Project p
 	do merge template to "CHANGELOG.md"

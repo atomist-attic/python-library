@@ -19,5 +19,5 @@ editor AddPythonGitignore
 
 let gitignore = "Python.gitignore.mustache"
 
-with project
+with Project
 	do merge gitignore to ".gitignore"

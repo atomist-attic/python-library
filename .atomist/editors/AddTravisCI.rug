@@ -20,5 +20,5 @@ editor AddTravisCI
 
 let template = "travisci.yml.mustache"
 
-with project p
+with Project p
 	do merge template to ".travis.yml"

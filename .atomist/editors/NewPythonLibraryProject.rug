@@ -46,11 +46,11 @@ param version: @semantic_version
 @default "My new project"
 param description: @any
 
-with project begin
+with Project begin
    do replaceInPath "python_lib" project_name
 end
 
-with file f when f.name.endsWith ".py" begin
+with File f when f.name.endsWith ".py" begin
    do replace "python_lib" project_name
    do replace "0.1.0" version
    do replace "My library" description
@@ -59,7 +59,7 @@ end
 /* for now this the way we don't let the generator license
  * move into the generated project
  */
-with project begin
+with Project begin
     do deleteFile "LICENSE"
     do deleteFile ".gitignore"
 end

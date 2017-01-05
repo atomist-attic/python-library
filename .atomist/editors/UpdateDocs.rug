@@ -28,11 +28,11 @@ param project_name: @project_name
 @validInput "MAJOR.MINOR.PATCH"
 param version: @semantic_version
 
-with file f when f.name = "conf.py" begin
+with File f when f.name = "conf.py" begin
    do replace "python_lib" project_name
    do replace "0.0.1" version
 end
 
-with file f when f.name = "index.rst" begin
+with File f when f.name = "index.rst" begin
    do replace "python_lib" project_name
 end
